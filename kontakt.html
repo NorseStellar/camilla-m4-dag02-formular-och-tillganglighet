@@ -79,20 +79,30 @@
                <label for="sms">SMS</label>
             </fieldset>
 
-            <label for="onskemal">Övriga önskemål</label>
-            <textarea>
-               <input type="text" id="namn" name="namn" placeholder="Skriv ditt namn här" />
-            </textarea>
-
+            <!-- Fungerar denna?  -->
             <article>
-               <label for="namn">Jag godkänner att Kafé Kardemumma sparar mina uppgifter för bokningen. *</label>
-               <input type="text" id="namn" name="namn" required placeholder="Skriv ditt namn här" />
+               <legend>Övriga önskemål</legend>
+               <textarea id="onskemal" name="onskemal" rows="4"> </textarea>
             </article>
+
+            <!-- Annars denna
+            <article>
+               <label for="onskemal">Övriga önskemål</label>
+               <textarea id="onskemal" name="onskemal" rows="4"> </textarea>
+            </article> -->
+
+            <fieldset>
+               <legend>Samtycke</legend>
+
+               <input type="checkbox" id="samtycke" name="samtycke" value="true" />
+               <label for="samtycke">Jag godkänner att Kafé Kardemumma sparar mina uppgifter för bokningen. * </label>
+            </fieldset>
+
             <!-- TODO 1: fält för namn, e-post, telefon, datum (label + input med for/id) -->
             <!-- TODO 2: rullista för antal personer, textarea för önskemål -->
             <!-- TODO 3: fieldset + legend för kostönskemål och bekräftelsesätt -->
             <!-- TODO 4: samtyckeskryssruta (required) och skickaknapp -->
-            <button type="submit">Skicka</button>
+            <button type="submit">Skicka bokning</button>
          </form>
       </main>
 
